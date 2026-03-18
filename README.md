@@ -17,20 +17,26 @@ To do: To build Build a model based on convolutional-recurrent architectures for
 - Attention layer learns which patches matter most for classification
 - 3 separate head classify style, artist, genre together aka multi task learning
 
-## Dataset Findings
+ ## Dataset Findings
 - used WikiArt via HuggingFace (500 samples used for this test)
 - Found class imbalance - impressionism : 129 paintings, synthetic_cubism: 1
 - effects model performance and metric choice
 
+![Sample Distribution](distribution.png)
+![Paintings with labels](wikiart_labels.png)
  
-
  ## Results
+
+ ![Style classification report](style.png)
 
 - Accuracy: 39% (baseline of always predicting Impressionism = 25.8%)
 - Macro F1: 0.190
 - Weighted F1: 0.347
 - Cohen's Kappa: 0.294
 - Outliers found: 19 confidently wrong predictions
+
+  ![Outlier Paintings](Outliers.png)
+
 
  ## Evaluation Metrics Used & Why
 
