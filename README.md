@@ -61,11 +61,24 @@ To do: Build a model to find similarities in paintings, e.g. portraits with a si
 
 Dataset: https://github.com/NationalGalleryOfArt/opendata
 
+  ![Sample Paintings from dataset](samplepaintings.png)
+
+
 ## Architecture
 A similarity search system using DINOv2 embeddings + cosine similarity.
 - No training required — DINOv2 pretrained on 142M images by Meta AI
 - Each painting encoded as a 384-dimensional embedding vector
 - Cosine similarity finds the most visually similar paintings
+
+### Visual Observations
+ ![nightcap](nightcap.png)
+ Good similarity but not portraits 
+
+  ![of man](portraitofman.png)
+  Poor similarity scores hence need to use more data/ paintings
+  
+  ![of boy](portraitofboy.png)
+  Good similarity scores achieved 
 
 ### Results
 | Metric | Score |
@@ -74,6 +87,8 @@ A similarity search system using DINOv2 embeddings + cosine similarity.
 | Portrait pair similarity | 0.640 |
 | Random pair similarity | 0.263 |
 | Similarity gap | 0.377 |
+
+ ![eval metrics](ngaeval.png)
 
 ### Why These Metrics
 - Precision@K: no ground truth labels exist so relevance defined by painting type
