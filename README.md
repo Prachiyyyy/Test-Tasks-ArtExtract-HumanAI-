@@ -20,12 +20,12 @@ To do: a model based on convolutional-recurrent architectures for classifying St
 - Found class imbalance - impressionism : 129 paintings, synthetic_cubism: 1
 - effects model performance and metric choice
 
-![Sample Distribution](distribution.png)
-![Paintings with labels](wikiart_labels.png)
+![Sample Distribution](images/distribution.png)
+![Paintings with labels](images/wikiart_labels.png)
  
  ## Results
 
- ![Style classification report](style.png)
+ ![Style classification report](images/style.png)
 
 - Accuracy: 39% (baseline of always predicting Impressionism = 25.8%)
 - Macro F1: 0.190
@@ -33,7 +33,7 @@ To do: a model based on convolutional-recurrent architectures for classifying St
 - Cohen's Kappa: 0.294
 - Outliers found: 19 confidently wrong predictions
 
-  ![Outlier Paintings](Outliers.png)
+  ![Outlier Paintings](images/Outliers.png)
 
 
  ## Evaluation Metrics Used & Why
@@ -61,7 +61,7 @@ To do: Build a model to find similarities in paintings, e.g. portraits with a si
 
 Dataset: https://github.com/NationalGalleryOfArt/opendata
 
-  ![Sample Paintings from dataset](samplepaintings.png)
+  ![Sample Paintings from dataset](images/samplepaintings.png)
 
 
 ## Architecture
@@ -71,13 +71,13 @@ A similarity search system using DINOv2 embeddings + cosine similarity.
 - Cosine similarity finds the most visually similar paintings
 
 ### Visual Observations
- ![nightcap](nightcap.png)
+ ![nightcap](images/nightcap.png)
  Good similarity but not portraits 
 
-  ![of man](portraitofman.png)
+  ![of man](images/portraitofman.png)
   Poor similarity scores hence need to use more data/ paintings
   
-  ![of boy](portraitofboy.png)
+  ![of boy](images/portraitofboy.png)
   Good similarity scores achieved 
 
 ### Results
@@ -88,7 +88,7 @@ A similarity search system using DINOv2 embeddings + cosine similarity.
 | Random pair similarity | 0.263 |
 | Similarity gap | 0.377 |
 
- ![eval metrics](ngaeval.png)
+ ![eval metrics](images/ngaeval.png)
 
 ### Why These Metrics
 - Precision@K: no ground truth labels exist so relevance defined by painting type
