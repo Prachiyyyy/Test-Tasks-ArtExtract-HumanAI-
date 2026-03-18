@@ -96,8 +96,8 @@ A similarity search system using DINOv2 embeddings + cosine similarity.
 ## Files
 | File | Description |
 |------|-------------|
-| `Task1_ArtExtract.ipynb` | WikiArt CRNN classifier notebook |
-| `Task1_ArtExtract.pdf` | PDF with full output |
+| `Task1(CRNN)_ArtExtract.ipynb` | WikiArt CRNN classifier notebook |
+| `Task1(CRNN)_ArtExtract.pdf` | PDF with full output |
 | `Task2_ArtExtract.ipynb` | NGA similarity search notebook |
 | `Task2_ArtExtract.pdf` | PDF with full output |
 
